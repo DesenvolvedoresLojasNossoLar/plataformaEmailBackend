@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/imgs/lojasnossolar.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/iframes/moveis/racks/Rack JCM Luz Noronha até 56/Rack JCM Luz Noronha Off White até 56.css">
+    <link rel="stylesheet" href="/css/iframes/marcaDAgua.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Serif:wght@400&display=swap" rel="stylesheet">
+    <title>Lojas Nosso Lar</title>
+</head>
+<body>
+
+  <main class="content-center">
+
+    <div class="watermark">
+      <img src="/imgs/moveis/rack/Rack JCM Luz Noronha até 56/mascote.webp" alt="marcaDAgua">
+      <p>Super Lojas Nosso Lar</p>
+    </div>
+
+    <div class="containerInicial">
+      <div class="titulo">
+        <h1>Rack JCM Luz</h1>
+        <p>Projetado para TVs de até 56 polegadas!</p>
+      </div>
+
+      <div class="content-container">
+  
+        <img class="Rackimg" id="Rackimg" src="/imgs/moveis/rack/Rack JCM Luz Noronha até 56/SomenteORack.webp" width="600px" height="auto" alt="Rack Luz Noronha" onmouseover="changeImage()" onclick="changeImage()">
+
+
+        <div class="cor-container">
+          <p class="TextCores">Disponível nas cores</p>
+          <div class="cor-item">
+            <p class="NoronhaOffWhite">
+              Noronha/Off-White
+            </p>
+            <div class="bola Noronha-Off-White" id="bolaOffWhite" onclick="changeImage('Noronha-Off-White')"></div>
+          </div>
+          <div class="cor-item">
+            <p class="NoronhaGrafite">
+              Noronha/Grafite
+            </p>
+            <div class="bola Noronha-Grafite" id="bolaGrafite" onclick="changeImage('Noronha-Grafite')"></div>
+          </div>
+        </div>
+     </div>
+    </div>
+    
+    <div class="containerMeio">
+      <div class="margin">
+        <strong class="titleE">Elegância, Versatilidade e Durabilidade</strong>
+        
+        <div class="imgLadoDoTexto">
+          <div class="pText">
+            <p>Confeccionado em MDP, destaca-se pelo tampo robusto de 30mm, proporcionando estabilidade. Os pés metálicos conferem um toque moderno e garantem durabilidade. Com portas em vidro temperado e dobradiças de pressão, o design une proteção a dispositivos eletrônicos com elegância e praticidade. A adega decorativa exclusiva adiciona charme e oferece espaço para bebidas favoritas. Além de suporte para TV, o Rack JCM Luz se destaca pela versatilidade, servindo como apoio para áudio e vídeo, aparador, e proporcionando espaço para objetos decorativos, livros e plantas.</p>
+          </div>
+          <div>
+            <img class="imgTexto" src="/imgs/moveis/rack/Rack JCM Luz Noronha até 56/rack.webp" width="600px" height="auto" alt="Rack Luz Noronha">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  
+    <div class="containerSemiFinal">
+      <p class="Dimensoes">Dimensões</p>
+      <img class="medidas" src="/imgs/moveis/rack/Rack JCM Luz Noronha até 56/medidasRack.webp" width="600px" height="auto" alt="Medidas Rack Luz Noronha ">
+    </div>
+  
+    <div class="containerTecnico">
+      <strong class="tittleP2">Detalhes Técnicos</strong>
+      <div class="backgroundText">
+        <div class="content">
+          <p class="pText2">
+            Quantidade de Compartimentos: 12 <br>
+            Tipo de Puxadores: Não possui<br>
+            Tipo de Pés: Metálicos<br>
+          </p>
+        </div>
+      </div>      
+    </div>
+
+    <a class="Pdf" href="https://github.com/claysonAlves12/IframesLojasNossoLar/raw/main/src/public/pdfs/moveis/rack/Rack%20JCM%20Luz%20Noronha%20Off%20White%20at%C3%A9%2056/Rack%20JCM%20Luz%20at%C3%A9%2056.pdf" download="Rack JCM Luz.pdf">Baixe o Manual</a>
+     
+  </main>
+  
+  
+  <script>
+    var originalImage = "/imgs/moveis/rack/Rack JCM Luz Noronha até 56/SomenteORack.webp";
+    var alternateImage = "/imgs/moveis/rack/Rack JCM Luz Noronha até 56/SomenteORack-Noronha-Grafite.webp";
+    var currentImage = originalImage;
+      
+    function changeImage() {
+      var rackImage = document.getElementById("Rackimg");
+      var bolaOffWhite = document.getElementById("bolaOffWhite");
+      var bolaGrafite = document.getElementById("bolaGrafite");
+        
+      if (currentImage === originalImage) {
+        currentImage = alternateImage;
+        bolaGrafite.style.display = "block";
+        bolaOffWhite.style.display = "none";
+      } else {
+        currentImage = originalImage;
+        bolaOffWhite.style.display = "block";
+        bolaGrafite.style.display = "none";
+      }
+      rackImage.src = currentImage;
+    }
+      
+  
+  </script>
+
+</body>
+</html>

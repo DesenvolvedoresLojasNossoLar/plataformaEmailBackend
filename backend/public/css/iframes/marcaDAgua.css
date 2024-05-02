@@ -1,0 +1,16 @@
+.watermark {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #008000d2;
+    font-size: 12px;
+    opacity: 0.50;
+}
+
+.watermark img{
+    width: 40px;
+}
