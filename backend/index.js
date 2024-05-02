@@ -10,7 +10,9 @@ const PORT = process.env.PORT || 80;
 
 const corsOptions = {
   origin: [
-    'https://marketinglojasnossolar.com.br'
+    'https://marketinglojasnossolar.com.br/',
+    'https://marketinglojasnossolar.com.br',
+    '54.207.155.81'
   ],
   optionsSuccessStatus: 200 
 };
