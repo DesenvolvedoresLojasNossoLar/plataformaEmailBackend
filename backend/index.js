@@ -37,14 +37,6 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 
-// Middleware para redirecionar requisições HTTPS para HTTP
-app.use((req, res, next) => {
-  if (req.secure) {
-    return res.redirect(301, `http://${req.headers.host}${req.url}`);
-  }
-  next();
-});
-
 // Rota para obter uma lista de usuários
 const routes = require('./routes');
 app.use('/', routes);
