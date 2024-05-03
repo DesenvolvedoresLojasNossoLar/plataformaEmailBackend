@@ -6,10 +6,11 @@ const path = require('path');
 const http = require('http');
 
 const app = express();
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 8080;
 
 app.use(cors({
-  origin: 'https://www.marketinglojasnossolar.com.br'
+  origin: ['https://www.marketinglojasnossolar.com.br','http://192.168.1.181']
+
 }));
 
 app.use((err, req, res, next) => {
