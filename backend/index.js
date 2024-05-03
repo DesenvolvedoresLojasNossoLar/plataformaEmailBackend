@@ -12,6 +12,7 @@ const corsOptions = {
   origin: [
     'https://marketinglojasnossolar.com.br',
     'http://marketinglojasnossolar.com.br',
+    'www.marketinglojasnossolar.com.br'
     'http://54.207.155.81',
     'https://54.207.155.81',
     '*' // Permitindo solicitações de qualquer origem (use com cautela)
