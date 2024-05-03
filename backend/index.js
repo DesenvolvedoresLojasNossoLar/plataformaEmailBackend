@@ -4,15 +4,13 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const http = require('http');
 
-
 const app = express();
 const PORT = process.env.PORT || 80;
 
 const corsOptions = {
   origin: [
-    'https://marketinglojasnossolar.com.br/',
-    'www.marketinglojasnossolar.com.br/:1',
-    'www.marketinglojasnossolar.com.br',
+    'https://marketinglojasnossolar.com.br',
+    'http://marketinglojasnossolar.com.br',
     'http://54.207.155.81',
     'https://54.207.155.81'
   ],
