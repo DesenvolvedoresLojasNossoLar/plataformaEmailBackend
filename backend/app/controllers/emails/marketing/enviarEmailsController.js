@@ -27,16 +27,17 @@ function mascaraRemetente(remetente) {
 }
 
 //enviar o email
-const sendEmails = async (remetentes, emailClients, nomeClient) => {
+const sendEmails = async (remetentes, emailClients, nomeClient, template) => {
     try {
         const remetenteMascarado = mascaraRemetente(remetentes);
 
+        console.log('Template enviado:', template);
         // Iterar sobre os e-mails dos destinatários
         for (let i = 0; i < emailClients.length; i++) {
             const destinatario = emailClients[i];
 
             // Caminho para o arquivo de template do e-mail
-            const templatePath = path.join(__dirname, '../../../views/templatesEmails/templateMarketing/templateMarketing.ejs');
+            const templatePath = path.join(__dirname, `../../../views/templatesEmails/templateMarketing/${template}`);
 
             // Renderizar o conteúdo HTML do e-mail a partir do template e dos dados fornecidos
             const htmlContent = await ejs.renderFile(templatePath, { nomeClient, destinatario });
@@ -47,6 +48,8 @@ const sendEmails = async (remetentes, emailClients, nomeClient) => {
             // Substituir as tags do template pelos valores correspondentes
             const htmlContentWithClientName = htmlContent.replace('{{nomeClient}}', nomeClient)
                                                          .replace('{{cancelURL}}', cancelURL);
+
+            console.log('HTML enviado:', htmlContentWithClientName); // Adicionado o console.log para verificar o HTML sendo enviado
 
             // Configuração do e-mail a ser enviado
             let mail = {
@@ -70,23 +73,23 @@ const sendEmails = async (remetentes, emailClients, nomeClient) => {
 
 
 
-//recebendo o email
+// Recebendo o email
 const enviarEmailController = async (req, res) => {
     try {
-        const { remetente, destinatarios } = req.body;
-        const nomeRemetente = remetente; 
+        console.log(req.body);
+        const { remetente, destinatarios, template } = req.body; // Corrigido aqui
 
-        console.log("Remetente:", nomeRemetente);
+        console.log("Remetente:", remetente);
         console.log("Destinatários:", destinatarios);      
 
         destinatarios.forEach(destinatario => {
             const emailClient = destinatario.email;
             const nomeClient = destinatario.nome;
         
-            console.log(`Email do cliente: ${emailClient}, Nome do cliente: ${nomeClient}`);
+            console.log(`Email do cliente: ${emailClient}, Nome do cliente: ${nomeClient}, template ${template}`);
 
             // Chamar a função sendEmails para enviar e-mails para cada destinatário
-            sendEmails(remetente, [emailClient], nomeClient)
+            sendEmails(remetente, [emailClient], nomeClient, template)
                 .then(() => console.log("E-mail enviado com sucesso para", nomeClient))
                 .catch(error => console.error("Erro ao enviar e-mails para", nomeClient, ":", error));
         });
@@ -97,6 +100,7 @@ const enviarEmailController = async (req, res) => {
         res.status(400).json({ success: false, message: error.message });
     }
 };
+
 
 
 module.exports = { enviarEmailController };
