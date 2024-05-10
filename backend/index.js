@@ -8,6 +8,8 @@ const http = require('http');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
+
+
 app.use(cors({
   origin: ['https://www.marketinglojasnossolar.com.br','http://192.168.1.181']
 
