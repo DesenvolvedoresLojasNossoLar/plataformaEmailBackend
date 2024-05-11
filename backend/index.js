@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors'); // Import the cors package
+require('./config/databaseMongoose');
 
 const bodyParser = require('body-parser');
 const path = require('path');
@@ -7,6 +8,8 @@ const http = require('http');
 
 const app = express();
 const PORT = process.env.PORT || 8080;
+
+
 
 app.use(cors({
   origin: ['https://www.marketinglojasnossolar.com.br','http://192.168.1.181']
