@@ -1,6 +1,55 @@
-const { autenticarUsuario } = require('../../models/consultarUsuario');
+const bcrypt = require('bcrypt');
+const Usuario = require('../../models/usuarios');
+
+exports.obterUsuarios = async (req, res) => {
+  const { email, senha } = req.body;
+  try {
+    const usuario = await Usuario.findOne({ email });
+
+    if (!usuario) {
+      return res.status(404).json({ error: 'Usuário não encontrado no banco de dados' });
+    }
+
+    const senhaCorrespondente = await bcrypt.compare(senha, usuario.senha);
+
+    if (senhaCorrespondente) {
+      return res.status(200).json({
+        nome: usuario.nome,
+        email: usuario.email,
+        permissoes: usuario.permissoes
+      });
+    } else {
+      return res.status(401).json({ error: 'Credenciais inválidas' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: 'Erro durante a autenticação', details: error.message });
+  }
+};
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* const { autenticarUsuario } = require('../../models/consultarUsuario');
 
 function postLogin(req, res) {
   const { email, password } = req.body;
@@ -25,4 +74,4 @@ function postLogin(req, res) {
 }
 
   
-module.exports = { postLogin };
+module.exports = { postLogin }; */

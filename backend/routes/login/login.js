@@ -3,9 +3,9 @@ const router = express.Router();
 const bodyParser = require('body-parser');
 
 
-const {postLogin} = require('../../app/controllers/login/loginController');
+const {obterUsuarios} = require('../../app/controllers/login/loginController');
 
 
-router.post('/', bodyParser.urlencoded({ extended: true }), postLogin);
+router.post('/', bodyParser.urlencoded({ extended: true }), obterUsuarios);
 
 module.exports = router;

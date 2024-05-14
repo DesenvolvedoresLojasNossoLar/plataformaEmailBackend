@@ -1,12 +1,11 @@
-// audioController.js
 const clientWhats = require('./conexaoWp');
 const path = require('path');
 
-let cliente = null; // Variável global para armazenar o cliente
+let cliente = null; 
 
 clientWhats.iniciar()
   .then(client => {
-    cliente = client; // Atribui o cliente à variável global
+    cliente = client;
     console.log("Cliente do Venom pronto!");
   })
   .catch(error => {
@@ -14,7 +13,7 @@ clientWhats.iniciar()
   });
 
 async function enviarAudio(numero) {
-    console.log(numero,"primeiro numero")
+
   try {
     if (!cliente) {
       throw new Error('Cliente do Venom não está pronto!');
@@ -34,13 +33,6 @@ async function enviarAudio(numero) {
     throw new Error('Erro ao enviar a solicitação de envio de áudio');
   }
 }
-
-module.exports = {
-  enviarAudio
-};
-
-
-
 
 module.exports = {
   enviarAudio

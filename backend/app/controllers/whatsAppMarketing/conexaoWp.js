@@ -1,4 +1,3 @@
-// venomConnection.js
 const venom = require("venom-bot");
 
 // Singleton para o cliente do Venom

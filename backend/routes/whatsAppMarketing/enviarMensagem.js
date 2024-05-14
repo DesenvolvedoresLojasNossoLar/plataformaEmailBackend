@@ -10,7 +10,7 @@ router.post('/enviar-audio', async (req, res) => {
     }
 
     // Extrai o número de telefone do array recebido
-    const numero = req.body.numero[0];
+    const numero = req.body.numero[0] + '@c.us';
 
     // Chama a função enviarAudio do controlador e passa o número de telefone
     const resultado = await enviarAudio(numero);
