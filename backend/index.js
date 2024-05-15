@@ -1,5 +1,6 @@
+require('./config/database');
 const express = require('express');
-const cors = require('cors'); 
+const cors = require('cors');
 
 const bodyParser = require('body-parser');
 const path = require('path');
@@ -9,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 app.use(cors({
-  origin: ['https://www.marketinglojasnossolar.com.br','http://192.168.1.181', 'http://192.168.1.111']
+  origin: ['https://www.marketinglojasnossolar.com.br','http://192.168.1.181']
 
 }));
 
