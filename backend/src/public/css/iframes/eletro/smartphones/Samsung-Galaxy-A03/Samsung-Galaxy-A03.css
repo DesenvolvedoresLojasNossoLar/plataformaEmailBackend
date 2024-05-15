@@ -1,0 +1,1211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    overflow-x: hidden;
+}  
+
+.content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerInicial{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerAlemDaExperiencia,
+.containerArmazenamento,
+.containerSigaEmFrente,
+.containerAparencia,
+.containerDisplay{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.containerCaptureSeuMundo,
+.containerSelfies,
+.containerOneUiCore,
+.containerExperiencia,
+.containerSempreAo{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.containerTragaOFoco{
+    width: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.containerImgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.textEImagem, img{
+    width: 600px;
+    height: auto;
+}
+
+.textEImagem h1{
+    color: #008000;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.imgs{
+    width: 500px;
+}
+
+.imgtitle{
+    width: 200px;
+}
+
+.marginImg{
+    position: relative;
+    left: -15px;
+}
+
+.text{
+    display:flex ;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.paragrafos{
+    width: 80%;
+    margin: 5px;
+    padding: 5px; 
+}
+
+.title{
+    background-color: #008000;
+    border-radius: 20px;
+    width: 80%;
+    margin: 5px 0 0px 0;
+    padding: 5px;
+}
+
+.imgEDescricao{
+    display:flex ;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.imgsBanner{
+    width: 50%;
+}
+
+.textCentralizado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.titleAoLadoDaImagem{
+    background-color: #008000;
+    text-align: center;
+    border-radius: 20px;
+    width: 80%;
+    margin: 5px 0 0px 0;
+    padding: 5px;
+
+}
+
+.containerImgs .imgNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.containerImgs .imgNav img{
+    width: 70px;
+}
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-container img {
+    display: none;
+    width: 800px;
+}
+
+#image-container img.active {
+    display: block;
+}
+
+
+.imgFinal{
+    width: 30%;
+}
+
+.containerCaptureSeuMundo img,
+.containerSelfies img,
+.containerExperiencia img{
+    width: 450px;
+    height: auto;
+}
+
+.containerOneUiCore img{
+    width: 300px;
+}
+
+.containerDisplay h2, 
+.containerAparencia h2, 
+.containerCaptureSeuMundo h2,
+.containerTragaOFoco h2, 
+.containerSelfies h2, 
+.containerAlemDaExperiencia h2, 
+.containerArmazenamento h2,
+.containerSigaEmFrente h2, 
+.containerOneUiCore h2, 
+.containerExperiencia h2, 
+.containerSempreAo h2 {
+    color: white;
+    text-shadow: 2px 0px 1px rgba(0, 0, 0, 0.993);
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.containerInicial p, 
+.containerDisplay p, 
+.containerAparencia p, 
+.containerCaptureSeuMundo p,
+.containerTragaOFoco p, 
+.containerSelfies p, 
+.containerAlemDaExperiencia p, 
+.containerArmazenamento p,
+.containerSigaEmFrente p, 
+.containerOneUiCore p, 
+.containerExperiencia p, 
+.containerSempreAo p {
+    font-size: 20px;
+    text-align: justify;
+    padding:10px;
+}
+
+.containerSempreAo .descricao,
+.containerOneUiCore .descricao,
+.containerSigaEmFrente .descricao,
+.containerArmazenamento .descricao,
+.containerAlemDaExperiencia .descricao,
+.containerSelfies .descricao,
+.containerTragaOFoco .descricao,
+.containerAparencia .descricao,
+.containerDisplay .descricao{
+    font-size: 15px;
+    text-align: center;
+}
+
+@media screen and (min-width:900px) and (max-width:1200px) {
+    .containerInicial{
+        width: 100%;
+    }
+    
+    .containerAlemDaExperiencia,
+    .containerArmazenamento,
+    .containerSigaEmFrente,
+    .containerAparencia,
+    .containerDisplay{
+        width: 100%;
+    }
+    
+    .containerCaptureSeuMundo,
+    .containerSelfies,
+    .containerOneUiCore,
+    .containerExperiencia,
+    .containerSempreAo{
+        width: 100%;
+    }
+    
+    .containerTragaOFoco{
+        width: 100%;
+    }
+      
+    
+    .textEImagem, img{
+        width: 400px;
+        height: auto;
+    }
+    
+    .imgs{
+        width: 300px;
+    }
+    
+    .imgtitle{
+        width: 200px;
+    }
+    
+    .marginImg{
+        position: relative;
+        left: -15px;
+    }
+    
+    .text{
+        display:flex ;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .paragrafos{
+        width: 100%;
+        margin: 5px;
+        padding: 5px; 
+    }
+    
+    .title{
+        background-color: #008000;
+        text-align: center;
+        border-radius: 20px;
+        width: 800px;
+        margin: 5px 0 0px 0;
+        padding: 5px;
+    }
+    
+    .imgEDescricao{
+        display:flex ;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .imgsBanner{
+        width: 650px;
+        border-radius: 10px;
+    }
+    
+    .textCentralizado{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .titleAoLadoDaImagem{
+        background-color: #008000;
+        text-align: center;
+        border-radius: 20px;
+        width: 430px;
+        margin: 5px 0 0px 0;
+        padding: 5px;
+    }
+    
+    .containerImgs .imgNav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .containerImgs .imgNav img{
+        width: 70px;
+    }
+    
+    #image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #image-container img {
+        display: none;
+        width: 750px;
+    }
+    
+    #image-container img.active {
+        display: block;
+    }
+    
+    
+    .imgFinal{
+        width: 400px;
+    }
+    
+    .containerCaptureSeuMundo img,
+    .containerSelfies img,
+    .containerExperiencia img{
+        width: 350px;
+        height: auto;
+    }
+    
+    .containerOneUiCore img{
+        width: 250px;
+    }
+    
+    .containerDisplay h2, 
+    .containerAparencia h2, 
+    .containerCaptureSeuMundo h2,
+    .containerTragaOFoco h2, 
+    .containerSelfies h2, 
+    .containerAlemDaExperiencia h2, 
+    .containerArmazenamento h2,
+    .containerSigaEmFrente h2, 
+    .containerOneUiCore h2, 
+    .containerExperiencia h2, 
+    .containerSempreAo h2 {
+        color: white;
+        text-shadow: 2px 0px 1px rgba(0, 0, 0, 0.993);
+        font-size: 35px;
+        font-weight: 600;
+    }
+    
+    .containerInicial p, 
+    .containerDisplay p, 
+    .containerAparencia p, 
+    .containerCaptureSeuMundo p,
+    .containerTragaOFoco p, 
+    .containerSelfies p, 
+    .containerAlemDaExperiencia p, 
+    .containerArmazenamento p,
+    .containerSigaEmFrente p, 
+    .containerOneUiCore p, 
+    .containerExperiencia p, 
+    .containerSempreAo p {
+        font-size: 20px;
+        text-align: justify;
+        padding:10px;
+    }
+    
+    .containerSempreAo .descricao,
+    .containerOneUiCore .descricao,
+    .containerSigaEmFrente .descricao,
+    .containerArmazenamento .descricao,
+    .containerAlemDaExperiencia .descricao,
+    .containerSelfies .descricao,
+    .containerTragaOFoco .descricao,
+    .containerAparencia .descricao,
+    .containerExperiencia .descricao,
+    .containerDisplay .descricao{
+        font-size: 15px;
+        text-align: center;
+    }
+    
+} 
+
+@media screen and (min-width:766px) and (max-width:899px) {
+    .containerInicial{
+        width: 100%;
+    }
+
+    .containerAlemDaExperiencia,
+    .containerArmazenamento,
+    .containerSigaEmFrente,
+    .containerAparencia,
+    .containerDisplay{
+        width: 100%;
+
+    }
+    
+    .containerOneUiCore,
+    .containerSelfies,
+    .containerSempreAo{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .containerExperiencia,
+    .containerCaptureSeuMundo,
+    .containerTragaOFoco{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .textEImagem, img{
+        width: 350px;
+        height: auto;
+    }
+        
+    .imgs{
+        width: 300px;
+    }
+    
+    .imgtitle{
+        width: 200px;
+    }
+    
+    .marginImg{
+        position: relative;
+        left: -6px;
+    }
+    
+    .paragrafos{
+        width: 700px;
+    }
+    
+    .title{
+        width: 600px;
+    }
+    
+    .imgsBanner{
+        width: 550px;
+        border-radius: 10px;
+    }
+    
+    .textCentralizado{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .titleAoLadoDaImagem{
+        background-color: #008000;
+        text-align: center;
+        border-radius: 20px;
+        width: 700px;
+        margin: 5px 0 0px 0;
+        padding: 5px;
+    
+    }
+
+    .centerImgs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .containerImgs .imgNav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .containerImgs .imgNav img{
+        width: 70px;
+    }
+    
+    #image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #image-container img {
+        display: none;
+        width: 550px;
+    }
+    
+    .imgFinal{
+        width: 400px;
+    }
+    
+    .containerCaptureSeuMundo img,
+    .containerSelfies img,
+    .containerExperiencia img{
+        width: 300px;
+        height: auto;
+    }
+    
+    .containerOneUiCore img{
+        width: 200px;
+    }
+    
+    .containerDisplay h2, 
+    .containerAparencia h2, 
+    .containerCaptureSeuMundo h2,
+    .containerTragaOFoco h2, 
+    .containerSelfies h2, 
+    .containerAlemDaExperiencia h2, 
+    .containerArmazenamento h2,
+    .containerSigaEmFrente h2, 
+    .containerOneUiCore h2, 
+    .containerExperiencia h2, 
+    .containerSempreAo h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .containerInicial p, 
+    .containerDisplay p, 
+    .containerAparencia p, 
+    .containerCaptureSeuMundo p,
+    .containerTragaOFoco p, 
+    .containerSelfies p, 
+    .containerAlemDaExperiencia p, 
+    .containerArmazenamento p,
+    .containerSigaEmFrente p, 
+    .containerOneUiCore p, 
+    .containerExperiencia p, 
+    .containerSempreAo p {
+        font-size: 20px;
+    }
+    
+    .containerSempreAo .descricao,
+    .containerOneUiCore .descricao,
+    .containerSigaEmFrente .descricao,
+    .containerArmazenamento .descricao,
+    .containerAlemDaExperiencia .descricao,
+    .containerSelfies .descricao,
+    .containerTragaOFoco .descricao,
+    .containerAparencia .descricao,
+    .containerExperiencia .descricao,
+    .containerDisplay .descricao{
+        font-size: 15px;
+        width: 500px;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:765px){
+    .containerInicial{
+        width: 100%;
+    }
+
+    .containerAlemDaExperiencia,
+    .containerArmazenamento,
+    .containerSigaEmFrente,
+    .containerAparencia,
+    .containerDisplay{
+        width: 100%;
+
+    }
+    
+    .containerOneUiCore,
+    .containerSelfies,
+    .containerSempreAo{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .containerExperiencia,
+    .containerCaptureSeuMundo,
+    .containerTragaOFoco{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .textEImagem, img{
+        width: 350px;
+        height: auto;
+    }
+        
+    .imgs{
+        width: 300px;
+    }
+    
+    .imgtitle{
+        width: 200px;
+    }
+    
+    .marginImg{
+        position: relative;
+        left: -6px;
+    }
+    
+    .paragrafos{
+        width: 700px;
+    }
+    
+    .title{
+        width: 700px;
+    }
+    
+    .imgsBanner{
+        width: 560px;
+        border-radius: 10px;
+    }
+    
+    .textCentralizado{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .titleAoLadoDaImagem{
+        background-color: #008000;
+        text-align: center;
+        border-radius: 20px;
+        width: 600px;
+        margin: 5px 0 0px 0;
+        padding: 5px;
+    }
+
+    .centerImgs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .containerImgs .imgNav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .containerImgs .imgNav img{
+        width: 70px;
+    }
+    
+    #image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #image-container img {
+        display: none;
+        width: 550px;
+    }
+    
+    .imgFinal{
+        width: 350px;
+    }
+    
+    .containerCaptureSeuMundo img,
+    .containerSelfies img,
+    .containerExperiencia img{
+        width: 300px;
+        height: auto;
+    }
+    
+    .containerOneUiCore img{
+        width: 200px;
+    }
+    
+    .containerDisplay h2, 
+    .containerAparencia h2, 
+    .containerCaptureSeuMundo h2,
+    .containerTragaOFoco h2, 
+    .containerSelfies h2, 
+    .containerAlemDaExperiencia h2, 
+    .containerArmazenamento h2,
+    .containerSigaEmFrente h2, 
+    .containerOneUiCore h2, 
+    .containerExperiencia h2, 
+    .containerSempreAo h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .containerInicial p, 
+    .containerDisplay p, 
+    .containerAparencia p, 
+    .containerCaptureSeuMundo p,
+    .containerTragaOFoco p, 
+    .containerSelfies p, 
+    .containerAlemDaExperiencia p, 
+    .containerArmazenamento p,
+    .containerSigaEmFrente p, 
+    .containerOneUiCore p, 
+    .containerExperiencia p, 
+    .containerSempreAo p {
+        font-size: 20px;
+    }
+    
+    .containerSempreAo .descricao,
+    .containerOneUiCore .descricao,
+    .containerSigaEmFrente .descricao,
+    .containerArmazenamento .descricao,
+    .containerAlemDaExperiencia .descricao,
+    .containerSelfies .descricao,
+    .containerTragaOFoco .descricao,
+    .containerAparencia .descricao,
+    .containerExperiencia .descricao,
+    .containerDisplay .descricao{
+        font-size: 15px;
+        width: 500px;
+    }
+    
+}
+
+@media screen and (min-width:500px) and (max-width:699px){
+
+    .containerAlemDaExperiencia,
+    .containerArmazenamento,
+    .containerSigaEmFrente,
+    .containerAparencia,
+    .containerDisplay{
+        width: 80%;
+    }
+    
+    .containerOneUiCore,
+    .containerSelfies,
+    .containerSempreAo{
+        width: 80%;
+        flex-direction: column-reverse;
+    }
+
+    .containerExperiencia,
+    .containerCaptureSeuMundo,
+    .containerTragaOFoco{
+        width: 80%;
+        flex-direction: column;
+    }
+    
+    .textEImagem, img{
+        width: 250px;
+        height: auto;
+    }
+        
+    .imgs{
+        width: 250px;
+    }
+    
+    .imgtitle{
+        width: 200px;
+    }
+    
+    .marginImg{
+        position: relative;
+        left: -6px;
+    }
+    
+    .paragrafos{
+        width: 500px;
+    }
+    
+    .title{
+        width: 450px;
+    }
+    
+    .imgsBanner{
+        width: 480px;
+    }
+    
+    .textCentralizado{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .titleAoLadoDaImagem{
+        background-color: #008000;
+        text-align: center;
+        border-radius: 20px;
+        width: 450px;
+        margin: 5px 0 0px 0;
+        padding: 5px;
+    
+    }
+    
+    .centerImgs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerImgs .imgNav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .containerImgs .imgNav img{
+        width: 70px;
+    }
+    
+    #image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #image-container img {
+        display: none;
+        width: 500px;
+    }
+    
+    .imgFinal{
+        width: 300px;
+    }
+    
+    .containerCaptureSeuMundo img,
+    .containerSelfies img,
+    .containerExperiencia img{
+        width: 300px;
+        height: auto;
+    }
+    
+    .containerOneUiCore img{
+        width: 200px;
+    }
+    
+    .containerDisplay h2, 
+    .containerAparencia h2, 
+    .containerCaptureSeuMundo h2,
+    .containerTragaOFoco h2, 
+    .containerSelfies h2, 
+    .containerAlemDaExperiencia h2, 
+    .containerArmazenamento h2,
+    .containerSigaEmFrente h2, 
+    .containerOneUiCore h2, 
+    .containerExperiencia h2, 
+    .containerSempreAo h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .containerInicial p, 
+    .containerDisplay p, 
+    .containerAparencia p, 
+    .containerCaptureSeuMundo p,
+    .containerTragaOFoco p, 
+    .containerSelfies p, 
+    .containerAlemDaExperiencia p, 
+    .containerArmazenamento p,
+    .containerSigaEmFrente p, 
+    .containerOneUiCore p, 
+    .containerExperiencia p, 
+    .containerSempreAo p {
+        font-size: 20px;
+    }
+    
+    .containerSempreAo .descricao,
+    .containerOneUiCore .descricao,
+    .containerSigaEmFrente .descricao,
+    .containerArmazenamento .descricao,
+    .containerAlemDaExperiencia .descricao,
+    .containerSelfies .descricao,
+    .containerTragaOFoco .descricao,
+    .containerAparencia .descricao,
+    .containerExperiencia .descricao,
+    .containerDisplay .descricao{
+        font-size: 15px;
+        width: 500px;
+    }
+    
+}
+
+@media screen and (min-width:400px) and (max-width:499px){
+    .containerInicial{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .containerAlemDaExperiencia,
+    .containerArmazenamento,
+    .containerSigaEmFrente,
+    .containerAparencia,
+    .containerDisplay{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+
+    .containerSelfies,
+    .containerOneUiCore,
+    .containerSempreAo{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .containerExperiencia,
+    .containerCaptureSeuMundo{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .containerTragaOFoco{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .textEImagem, img{
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+    }
+        
+    .imgs{
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .imgtitle{
+        max-width:200px;
+        width: 100%;
+    }
+    
+    .marginImg{
+        position: relative;
+        left: -5px;
+        max-width: 250px;
+        width: 100%;
+    }
+
+    .paragrafos{
+        width: 100%;
+    }
+
+    .title{
+        border-radius: 0px;
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .imgsBanner{
+        width: 100%;
+    }
+
+    .titleAoLadoDaImagem{
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .containerImgs .imgNav img{
+        max-width: 70px;
+        width: 100%;
+        height: auto;
+    }
+
+    #image-container img {
+        display: none;
+        max-width: 800px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .containerCaptureSeuMundo img,
+    .containerSelfies img,
+    .containerExperiencia img{
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+    }
+
+    .containerOneUiCore img{
+        max-width: 250px;
+        width: 100%;
+        height: auto;
+    }
+
+    .imgFinal{
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .containerDisplay h2, 
+    .containerAparencia h2, 
+    .containerCaptureSeuMundo h2,
+    .containerTragaOFoco h2, 
+    .containerSelfies h2, 
+    .containerAlemDaExperiencia h2, 
+    .containerArmazenamento h2,
+    .containerSigaEmFrente h2, 
+    .containerOneUiCore h2, 
+    .containerExperiencia h2, 
+    .containerSempreAo h2 {
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .containerInicial p, 
+    .containerDisplay p, 
+    .containerAparencia p, 
+    .containerCaptureSeuMundo p,
+    .containerTragaOFoco p, 
+    .containerSelfies p, 
+    .containerAlemDaExperiencia p, 
+    .containerArmazenamento p,
+    .containerSigaEmFrente p, 
+    .containerOneUiCore p, 
+    .containerExperiencia p, 
+    .containerSempreAo p {
+        font-size: 19px;
+        text-align: justify;
+        padding:10px;
+    }
+
+    .containerSempreAo .descricao,
+    .containerOneUiCore .descricao,
+    .containerSigaEmFrente .descricao,
+    .containerArmazenamento .descricao,
+    .containerAlemDaExperiencia .descricao,
+    .containerSelfies .descricao,
+    .containerTragaOFoco .descricao,
+    .containerAparencia .descricao,
+    .containerDisplay .descricao{
+        font-size: 15px;
+        text-align: center;
+    } 
+}
+
+@media only screen and (max-width: 400px) {
+    
+    .containerInicial{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .containerAlemDaExperiencia,
+    .containerArmazenamento,
+    .containerSigaEmFrente,
+    .containerAparencia,
+    .containerDisplay{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+
+    .containerSelfies,
+    .containerOneUiCore,
+    .containerSempreAo{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .containerExperiencia,
+    .containerCaptureSeuMundo{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .containerTragaOFoco{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .textEImagem, img{
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+    }
+        
+    .imgs{
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .imgtitle{
+        max-width:200px;
+        width: 100%;
+    }
+    
+    .marginImg{
+        position: relative;
+        left: -5px;
+        max-width: 250px;
+        width: 100%;
+    }
+
+    .paragrafos{
+        width: 100%;
+    }
+
+    .title{
+        border-radius: 0px;
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .imgsBanner{
+        width: 100%;
+    }
+
+    .titleAoLadoDaImagem{
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .containerImgs .imgNav img{
+        max-width: 70px;
+        width: 100%;
+        height: auto;
+    }
+
+    #image-container img {
+        display: none;
+        max-width: 800px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .containerCaptureSeuMundo img,
+    .containerSelfies img,
+    .containerExperiencia img{
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+    }
+
+    .containerOneUiCore img{
+        max-width: 250px;
+        width: 100%;
+        height: auto;
+    }
+
+    .imgFinal{
+        max-width: 300px;
+        width: 95%;
+    }
+
+    .containerDisplay h2, 
+    .containerAparencia h2, 
+    .containerCaptureSeuMundo h2,
+    .containerTragaOFoco h2, 
+    .containerSelfies h2, 
+    .containerAlemDaExperiencia h2, 
+    .containerArmazenamento h2,
+    .containerSigaEmFrente h2, 
+    .containerOneUiCore h2, 
+    .containerExperiencia h2, 
+    .containerSempreAo h2 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .containerInicial p, 
+    .containerDisplay p, 
+    .containerAparencia p, 
+    .containerCaptureSeuMundo p,
+    .containerTragaOFoco p, 
+    .containerSelfies p, 
+    .containerAlemDaExperiencia p, 
+    .containerArmazenamento p,
+    .containerSigaEmFrente p, 
+    .containerOneUiCore p, 
+    .containerExperiencia p, 
+    .containerSempreAo p {
+        font-size: 18px;
+        text-align: justify;
+        padding:10px;
+    }
+
+    .containerSempreAo .descricao,
+    .containerOneUiCore .descricao,
+    .containerSigaEmFrente .descricao,
+    .containerArmazenamento .descricao,
+    .containerAlemDaExperiencia .descricao,
+    .containerSelfies .descricao,
+    .containerTragaOFoco .descricao,
+    .containerAparencia .descricao,
+    .containerDisplay .descricao{
+        font-size: 12px;
+        text-align: center;
+    }
+}

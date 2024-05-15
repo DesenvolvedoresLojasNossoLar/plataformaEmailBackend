@@ -1,0 +1,44 @@
+
+/* Estilos para a lista de pastas e arquivos */
+.folder-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilos para cada pasta */
+.folder-name {
+    cursor: pointer;
+    color: #108d10;
+    font-weight: 600;
+    padding: 20px;
+}
+
+/* Estilos para cada arquivo */
+.item {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/* Estilos para o link */
+.linkFiles:hover {
+    color: #b30000;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Estilos para o hover */
+.item:hover {
+    background-color: #f3f3f3d0;
+    transition: background-color 0.3s ease-in-out; 
+}
+
+/* Estilos para o ícone de pasta */
+.folder-name::before {
+    content: '\📁';
+    font-family: 'Font Awesome 5 Free';
+}
+
+/* Estilos para o ícone de arquivo */
+.item::before {
+    content: '\📄';
+}

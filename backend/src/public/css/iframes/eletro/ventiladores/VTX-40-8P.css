@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+.content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#containerInicial h1{
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+    background-color:#249904 ;
+    color: white;
+    padding: 5px;
+}
+
+.ventiladorContainerIncial{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.textoAoLadoDaImagem{
+    font-size: 55px;
+    color: #313131;
+    font-weight: bold;
+}
+
+.estiloDaFonte{
+    font-weight: 100;  
+}
+
+.palhetasDeNiveis {
+    display: flex;
+    gap: 60px;
+    text-align: center;
+}
+
+.palhetasDeNiveis div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #001C48; 
+    overflow: hidden;
+}
+
+.palhetasDeNiveis div img {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform-origin: center;
+    transform: translate(-50%, -50%); 
+    width: 80px;
+    height: auto;
+}
+
+@keyframes girarUm {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes girarDois {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes girarTres {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.nivelUm {
+    animation: girarUm 0.4s linear infinite;
+}
+
+.nivelDois {
+    animation: girarDois 0.2s linear infinite;
+}
+
+.nivelTres {
+    animation: girarTres 0.001s linear infinite;
+}
+
+#containerMascote{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(48, 157, 18);
+    background-image: linear-gradient(to left, rgba(48, 157, 18, 0.849), rgba(48, 157, 18, 0.548)), url('/imgs/eletro/ventiladores/VTX-40-8P/backgroundContainerMascote.webp');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+#containerContendoTaina{
+    display: flex;
+    justify-content: center;
+    background-color: #EEEEEE;
+}
+
+#detalhesDoProduto{
+    display: flex;
+    justify-content: center;
+}
+
+.titulosDetalhesDoProduto{
+    display:flex ;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.primeiroTituloDetalhesDoProduto h2,
+.segundoTituloDetalhesDoProduto h2{
+    color: #309d11;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.primeiroTituloDetalhesDoProduto p,
+.segundoTituloDetalhesDoProduto p{
+    color:#121212;
+    font-size: 40px;
+    padding: 15px;
+    font-weight:400;
+}
+
+#containerMedidas{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#containerMedidas h2{
+    font-size: 100px;
+    font-weight: bold;
+    color: #309d11;
+}
+
+#containerFinal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background-color: #ededed;
+}
+
+#containerFinal h2{
+    font-size: 70px;
+    color:#309d11;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#containerFinal p{
+    font-size: 40px;
+    color: #303030;
+    font-weight: 500;
+}
+
+@media screen and (min-width:1000px) and (max-width:1300px) {
+    #containerInicial h1{
+        font-size: 40px;
+    }
+
+    .ventiladorContainerIncial{
+        align-items: center;
+    }
+
+    .textoAoLadoDaImagem{
+        font-size: 35px;
+    }
+
+    .palhetasDeNiveis div {
+        width: 70px;
+        height: 70px;
+    }
+
+    .palhetasDeNiveis div img {
+        width: 50px;
+    } 
+
+    .imagemVentilador img{
+        width: 450px;
+        height: auto;
+    }
+
+ 
+    #containerContendoTaina img{
+        width: 1000px;
+        height: auto;
+    }
+
+    #detalhesDoProduto {
+        padding: 10px;
+    }
+
+    #detalhesDoProduto div img{
+        width: 450px;
+        height: auto;
+    }
+
+    .primeiroTituloDetalhesDoProduto h2,
+    .segundoTituloDetalhesDoProduto h2{
+        font-size: 40px;
+    }
+
+    .primeiroTituloDetalhesDoProduto p,
+    .segundoTituloDetalhesDoProduto p{
+        font-size: 30px;
+    }
+    
+    #containerMascote img{
+        width: 1000px;
+        height: auto;
+    }
+
+    #containerMedidas img{
+        width: 450px;
+        height: auto;
+    }
+
+    #containerMedidas h2{
+        font-size: 50px;
+    }
+
+    #containerFinal h2{
+        font-size: 40px;
+    }
+
+    #containerFinal p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:999px) {
+    #containerInicial h1{
+        font-size: 40px;
+        background-color: red;
+    }
+
+    .ventiladorContainerIncial{
+        align-items: center;
+    }
+
+    .textoAoLadoDaImagem{
+        font-size: 35px;
+    }
+
+    .palhetasDeNiveis div {
+        width: 70px;
+        height: 70px;
+    }
+
+    .palhetasDeNiveis div img {
+        width: 50px;
+    } 
+
+    .imagemVentilador img{
+        width: 500px;
+        height: auto;
+    }
+
+ 
+    #containerContendoTaina img{
+        width: 800px;
+        height: auto;
+    }
+
+    #detalhesDoProduto {
+        padding: 10px;
+    }
+
+    #detalhesDoProduto div img{
+        width: 500px;
+        height: auto;
+    }
+
+    .primeiroTituloDetalhesDoProduto h2,
+    .segundoTituloDetalhesDoProduto h2{
+        font-size: 30px;
+    }
+
+    .primeiroTituloDetalhesDoProduto p,
+    .segundoTituloDetalhesDoProduto p{
+        font-size: 25px;
+    }
+    
+    #containerMascote img{
+        width: 800px;
+        height: auto;
+    }
+
+    #containerMedidas img{
+        width: 450px;
+        height: auto;
+    }
+
+    #containerMedidas h2{
+        font-size: 50px;
+    }
+
+    #containerFinal h2{
+        font-size: 40px;
+    }
+
+    #containerFinal p{
+        font-size: 20px;
+    }
+
+}
