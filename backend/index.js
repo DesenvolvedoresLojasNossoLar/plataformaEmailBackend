@@ -1,5 +1,5 @@
 const express = require('express');
-const cors = require('cors'); // Import the cors package
+const cors = require('cors'); 
 
 const bodyParser = require('body-parser');
 const path = require('path');
