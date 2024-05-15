@@ -1,4 +1,4 @@
-const clientWhats = require('./conexaoWp');
+/* const clientWhats = require('./conexaoWp');
 const path = require('path');
 
 let cliente = null; 
@@ -37,3 +37,4 @@ async function enviarAudio(numero) {
 module.exports = {
   enviarAudio
 };
+ */
