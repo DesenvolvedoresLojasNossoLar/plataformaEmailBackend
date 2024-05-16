@@ -9,10 +9,12 @@ const http = require('http');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-app.use(cors({
-  origin: ['https://www.marketinglojasnossolar.com.br','http://192.168.1.181','http://192.168.70.240', 'http://localhost']
+/* app.use(cors({
+  origin: ['https://www.marketinglojasnossolar.com.br','http://192.168.1.181','http://192.168.70.240', 'http://localhost:80']
 
-}));
+})); */
+
+app.use(cors());
 
 app.use((err, req, res, next) => {
   console.error(err.stack);

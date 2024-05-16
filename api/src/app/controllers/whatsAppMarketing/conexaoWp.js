@@ -1,4 +1,4 @@
-/* const venom = require("venom-bot");
+const venom = require("venom-bot");
 
 // Singleton para o cliente do Venom
 class ClientWhats {
@@ -33,4 +33,3 @@ class ClientWhats {
 const clientWhatsInstance = new ClientWhats();
 
 module.exports = clientWhatsInstance;
- */

@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs').promises;
 
 async function main() {
-    const directoryPath = './app/views/iframes';
+    const directoryPath = './src/app/views/iframes';
     try {
         return await listSubfoldersAndPages(directoryPath);
     } catch (error) {
@@ -12,6 +12,7 @@ async function main() {
 }
 
 async function listSubfoldersAndPages(dir, baseUrl = '') {
+    console.log(baseUrl)
     try {
         const items = await fs.readdir(dir);
         const foldersAndPages = [];
