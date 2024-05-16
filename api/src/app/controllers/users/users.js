@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 
 exports.criarUsuario = async (req, res) => {
     let { nome, email, senha, permissoes } = req.body;
-
+    console.log(req.body);
     try {
         if (!nome || !email || !senha || !permissoes) {
             return res.status(400).json({ error: 'Todos os campos (nome, email, senha, permissoes) são obrigatórios' });
@@ -12,7 +12,7 @@ exports.criarUsuario = async (req, res) => {
         nome = nome.toLowerCase().trim();
         email = email.toLowerCase().trim();
 
-        const usuarioExistente = await Usuario.findOne({
+       const usuarioExistente = await Usuario.findOne({
             $or: [
                 { nome: nome },
                 { email: email }
@@ -21,11 +21,13 @@ exports.criarUsuario = async (req, res) => {
 
         if (usuarioExistente) {
             if (usuarioExistente.nome === nome) {
-                return res.status(400).json({ error: 'Nome de usuário já está em uso' });
+                console.log(usuarioExistente.nome, '=', nome);
+                return res.status(400).json({ error: `O nome de usuário '${nome}' já está em uso.` });
             } else if (usuarioExistente.email === email) {
-                return res.status(400).json({ error: 'Email já está em uso' });
+                return res.status(400).json({ error: `O email '${email}' já está em uso.` });
             }
         }
+        
 
         const hashedSenha = await bcrypt.hash(senha, 10);
 
